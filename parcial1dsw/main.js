@@ -1,24 +1,23 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+const validarClave = () => {
+  let clave = document.getElementById('clave').value;
+  let confirmarClave = document.getElementById('confirmarClave').value;
+
+  // Expresión regular para validar al menos una mayúscula, una minúscula y un número,
+  // permitiendo otros caracteres especiales como $, ., @, #, %, &, =
+  let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d$.@#%&=]+$/;
+
+  if (!regex.test(clave)) {
+    alert('La clave debe contener al menos una letra mayúscula, una letra minúscula, un número y puede incluir otros caracteres especiales como $, ., @, #, %, &, =');
+    return false;
+  }
+
+  if (clave !== confirmarClave) {
+    alert('Las contraseñas no coinciden. Por favor, inténtalo de nuevo.');
+    return false;
+  }
+  alert('¡Los datos se han enviado correctamente!');
+
+  return true;
+}

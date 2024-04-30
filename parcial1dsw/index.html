@@ -1,13 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMERPARCIAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="contenedor">
+        <div class="header-1">
+            <img src="img/header.jpg" alt="Cabecera" class="Cabecera">
+        </div>
+            
+        <div class="header-2">
+            <img src="img/imgYo.jpg" alt="Yo" class="Yo">
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Admision</a></li>
+            <li><a href="#">Directorio</a></li>
+            <li><a href="#">Factultades</a></li>
+            <li><a href="#">Academica</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <div class="Container">
+
+    <div class="izquierda">
+        <form action="" onsubmit="return validarClave()">
+            <fieldset>
+                <h2 class="InicioS"><u>Inicie Sesion</u></h2>
+                <label>CORREO:</label> <br>
+                <input class="cuadro" type="text" placeholder="Ej: mt22i04001@usonsonate.edu.sv"><br><br>
+                <label>EXPEDIENTE:</label><br>
+                <input class="cuadro" type="text" placeholder="25849"> <br><br>
+                <label for="clave">CLAVE:</label><br>
+                <input id="clave" class="cuadro" type="password" placeholder="Escribe una clave"><br><br>
+                <label for="confirmarClave">CONFIRMAR CLAVE:</label><br>
+                <input id="confirmarClave" class="cuadro" type="password" placeholder="Confirmar clave"><br><br>
+                <input type="submit" value="Entrar" class="btn"> <br> 
+            </fieldset> <br>
+                <img src="img/house-solid.svg" alt="casa" class="icono">
+                <img src="img/tablet-solid.svg" alt="tablet" class="icono">
+                <img src="img/font-solid.svg" alt="letra" class="icono">
+        </form>
+    </div>
+
+    <div class="centro">
+
+        <div class="vision">
+            <h2>Vision</h2>
+            <p>
+                Ser una institución de educación superior reconocida por su excelencia académica y 
+                su contribución al desarrollo justo y equitativo de la sociedad salvadoreña.
+            </p>
+        </div>
+        <div class="mision">
+            <h2>Mision</h2>
+            <p>
+                Somos una institución de educación superior que a través del mejoramiento continuo de la docencia, 
+                investigación y proyección social, procuramos la excelencia académica y formamos profesionales 
+                competitivos comprometidos con la realidad nacional para contribuir al desarrollo humano 
+                sostenible de El Salvador.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="derecha">
+        <fieldset class="Total">
+            <fieldset class="Oferta">
+                <h2 class="OfertaACa">Oferta Academica</h2>
+            </fieldset>
+            <h4>F. Ciencias Juridicas</h4>
+            <ul>
+                <li>Lic. Ciencias Juridicas</li>
+            </ul>
+            <h4>F. de Economia</h4>
+            <ul>
+                <li>Lic. en Administracion</li>
+                <li>Lic. en Contadoria</li>
+                <li>Lic. en Educacion</li>
+            </ul>
+            <h4>F. de Ingenieria</h4>
+            <ul>
+                <li>Ing. Sistemas</li>
+                <li>Ing. Electrica</li>
+                <li>Ing. Industrial</li>
+                <li>Ing. Agronegocios</li>
+            </ul>
+        </fieldset>
+    </div>
+
+    </div>
+
+    <br>
+    <footer>
+        <p class="parrafo-F">
+          &copy; 2024 Universidad de Sonsonate - USO.
+        </p>
+        <p>
+          Calle Ing. Jesús Adalberto Diaz Pineda y Avenida Central Final Colonia 14 de Diciembre, Sonsonate, El Salvador C.A.
+        </p>
+        <p class="parrafo-F">
+          Teléfonos. 2429-9500, 2429-9225, tele-fax 2429-9503 y 2429-9526
+        </p>
+        <p class="parrafo-F">
+          e-mail: informacion@usonsonate.edu.sv
+        </p>
+      </footer>
+
+
+      <script src="main.js"></script>
+</body>
 </html>
