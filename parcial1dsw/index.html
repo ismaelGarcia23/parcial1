@@ -3,121 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIMERPARCIAL</title>
+    <title>Parcial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <header class="contenedor">
-        <div class="header-1">
-            <img src="img/header.jpg" alt="Cabecera" class="Cabecera">
+        <div>
+            <img class="img1" src="img/header.jpg" alt="" >
+            <img class="img3" src="img/logo_175x65.png" alt="">
         </div>
-            
-        <div class="header-2">
-            <img src="img/imgYo.jpg" alt="Yo" class="Yo">
+        <div>
+            <img class="img2" src="img/imgYo.jpg" alt="">
         </div>
-
     </header>
-
     <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Admision</a></li>
-            <li><a href="#">Directorio</a></li>
-            <li><a href="#">Factultades</a></li>
-            <li><a href="#">Academica</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Ayuda</a></li>
-        </ul>
+        <a href="#">Inicio </a>
+        <a href="#">Admision</a>
+        <a href="#">Directorio</a>
+        <a href="#">Facultades</a>
+        <a href="#">Academica</a>
+        <a href="#">Servicios</a>
+        <a href="#">Ayuda</a>
     </nav>
-
-    <div class="Container">
-
-    <div class="izquierda">
-        <form action="" onsubmit="return validarClave()">
-            <fieldset>
-                <h2 class="InicioS"><u>Inicie Sesion</u></h2>
+    <section class="main">
+        <div class="content1">
+          <form action="" onsubmit="return validarClave()">
+            <fieldset class="fiel1">
+                <h2 class="init"><u>Inicie Sesion</u></h2>
                 <label>CORREO:</label> <br>
-                <input class="cuadro" type="text" placeholder="Ej: mt22i04001@usonsonate.edu.sv"><br><br>
+                <input class="taminput" type="text" placeholder="Ej: mt22i04001@usonsonate.edu.sv"><br><br>
                 <label>EXPEDIENTE:</label><br>
-                <input class="cuadro" type="text" placeholder="25849"> <br><br>
+                <input class="taminput" type="text" placeholder="25849"> <br><br>
                 <label for="clave">CLAVE:</label><br>
-                <input id="clave" class="cuadro" type="password" placeholder="Escribe una clave"><br><br>
+                <input id="clave" class="taminput" type="password" placeholder="Escribe una clave"><br><br>
                 <label for="confirmarClave">CONFIRMAR CLAVE:</label><br>
-                <input id="confirmarClave" class="cuadro" type="password" placeholder="Confirmar clave"><br><br>
-                <input type="submit" value="Entrar" class="btn"> <br> 
+                <input id="confirmarClave" class="taminput" type="password" placeholder="Confirmar clave"><br><br>
+                <input type="submit" value="Entrar" class="tamimput2"> <br> 
             </fieldset> <br>
-                <img src="img/house-solid.svg" alt="casa" class="icono">
-                <img src="img/tablet-solid.svg" alt="tablet" class="icono">
-                <img src="img/font-solid.svg" alt="letra" class="icono">
-        </form>
-    </div>
-
-    <div class="centro">
-
-        <div class="vision">
-            <h2>Vision</h2>
-            <p>
-                Ser una institución de educación superior reconocida por su excelencia académica y 
-                su contribución al desarrollo justo y equitativo de la sociedad salvadoreña.
-            </p>
+          </form>
+          <img class="tamIcons" src="iconos/antenna-with-signal-transmission_icon-icons.com_56571.ico" alt="">
+          <img class="tamIcons" src="iconos/bookstack_libr_3024.ico" alt="">
+          <img class="tamIcons" src="iconos/antenna-with-signal-transmission_icon-icons.com_56571.ico" alt="">
         </div>
-        <div class="mision">
+
+        <div class="content2">
+           <h2>Vision</h2>
+           <p>Ser una institucion de educacion superior reconocida por su excelencia
+            academica y su contribucion al desarrollo justo y equilativo de la sociedad salvadoreña.</p>
+            <br>
             <h2>Mision</h2>
-            <p>
-                Somos una institución de educación superior que a través del mejoramiento continuo de la docencia, 
-                investigación y proyección social, procuramos la excelencia académica y formamos profesionales 
-                competitivos comprometidos con la realidad nacional para contribuir al desarrollo humano 
-                sostenible de El Salvador.
-            </p>
+            <p>Somos una institucion de educacion superior que a treves del mejoramiento continuo de la docencia, investigacion y proyeccion social,
+                procuramos la excelencia academica y formamos profesionales competitivos compremtidos con la realidad nacional para contribuir al desarrollo 
+                humano sostenible de El Salvador.</p>
         </div>
-
-    </div>
-
-    <div class="derecha">
-        <fieldset class="Total">
-            <fieldset class="Oferta">
-                <h2 class="OfertaACa">Oferta Academica</h2>
+        <br>
+        <br>
+        <div class="content3">
+            <fieldset class="disenT">
+                <fieldset class="ofert">
+                    Oferta Academica
+                </fieldset>
+                <h4>F. Ciencias Juridicas</h4>
+                <ul>
+                    <li>Lic. Ciencias Juridicas</li>
+                </ul>
+                <h4>F. de Economia</h4>
+                <ul>
+                    <li>Lic. en Administracion</li>
+                    <li>Lic. en Contadoria</li>
+                    <li>Lic. en Educacion</li>
+                </ul>
+                <h4>F. de Ingenieria</h4>
+                <ul>
+                    <li>Ing. Sistemas</li>
+                    <li>Ing. Electrica</li>
+                    <li>Ing. Industrial</li>
+                    <li>Ing. Agronegocios</li>
+                </ul>
             </fieldset>
-            <h4>F. Ciencias Juridicas</h4>
-            <ul>
-                <li>Lic. Ciencias Juridicas</li>
-            </ul>
-            <h4>F. de Economia</h4>
-            <ul>
-                <li>Lic. en Administracion</li>
-                <li>Lic. en Contadoria</li>
-                <li>Lic. en Educacion</li>
-            </ul>
-            <h4>F. de Ingenieria</h4>
-            <ul>
-                <li>Ing. Sistemas</li>
-                <li>Ing. Electrica</li>
-                <li>Ing. Industrial</li>
-                <li>Ing. Agronegocios</li>
-            </ul>
-        </fieldset>
-    </div>
-
-    </div>
-
-    <br>
+        </div>
+    </section>
     <footer>
-        <p class="parrafo-F">
-          &copy; 2024 Universidad de Sonsonate - USO.
-        </p>
-        <p>
-          Calle Ing. Jesús Adalberto Diaz Pineda y Avenida Central Final Colonia 14 de Diciembre, Sonsonate, El Salvador C.A.
-        </p>
-        <p class="parrafo-F">
-          Teléfonos. 2429-9500, 2429-9225, tele-fax 2429-9503 y 2429-9526
-        </p>
-        <p class="parrafo-F">
-          e-mail: informacion@usonsonate.edu.sv
-        </p>
-      </footer>
+        Universidad de sonsonate
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem aperiam quisquam facere, debitis laborum labore tenetur. Ullam quibusdam culpa impedit animi incidunt saepe ad optio in, asperiores delectus totam quo.</p>
+    </footer>
 
 
-      <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

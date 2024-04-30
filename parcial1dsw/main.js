@@ -1,8 +1,8 @@
 
 
 const validarClave = () => {
-  let clave = document.getElementById('clave').value;
-  let confirmarClave = document.getElementById('confirmarClave').value;
+  let clave = document.querySelector('#clave').value;
+  let confirmarClave = document.querySelector('#confirmarClave').value;
 
   // Expresión regular para validar al menos una mayúscula, una minúscula y un número,
   // permitiendo otros caracteres especiales como $, ., @, #, %, &, =
